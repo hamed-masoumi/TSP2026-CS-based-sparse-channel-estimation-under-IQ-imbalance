@@ -50,10 +50,6 @@ if norm(y_orig) ~= 0
 
         xhat1 = (pinv(AA))*y_orig;
 
-        if max(abs(xhat1))>1e4
-            flagg = 1;
-        end
-
 
         r = y_orig - AA*xhat1;
 
